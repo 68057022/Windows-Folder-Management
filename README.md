@@ -1,157 +1,134 @@
-# Project Management System
+# 项目管理系统
 
-A modern desktop application for managing web development projects, built with Electron and Vue 3.
+一款基于 Electron 和 Vue 3 构建的现代化桌面应用，用于管理 Web 开发项目。
 
-English | [简体中文](./README_CN.md)
+简体中文 | [English](./README_EN.md)
 
-## Screenshots
+## 应用截图
 
-### Dashboard
-![Dashboard](./screenshots/01-dashboard.png)
+### 仪表盘
+![仪表盘](./screenshots/01-dashboard.png)
 
-### Project List
-![Project List](./screenshots/02-project-list.png)
+### 项目列表
+![项目列表](./screenshots/02-project-list.png)
 
-### Edit Project
-![Edit Project](./screenshots/03-edit-project.png)
+### 编辑项目
+![编辑项目](./screenshots/03-edit-project.png)
 
-## Features
+## 功能特性
 
-- **Project Organization**: Manage multiple projects in a centralized workspace
-- **Project Lifecycle**: Track project phases (To-Do, Delivered, Needs Modification)
-- **Rich Project Details**: Store client information, deadlines, priorities, and requirements
-- **File Attachments**: Attach documents, images, and files to projects
-- **Batch Operations**: Import existing project folders and batch update project statuses
-- **Persistent Storage**: Automatic data persistence with configurable storage location
-- **Modern UI**: Clean, professional interface with responsive design
+- **项目组织管理**: 在集中的工作区中管理多个项目
+- **项目生命周期**: 跟踪项目阶段（待做、已交付、需修改）
+- **丰富的项目详情**: 存储客户信息、截止日期、优先级和需求
+- **文件附件**: 为项目附加文档、图片和文件
+- **批量操作**: 批量导入现有项目文件夹并批量更新项目状态
+- **持久化存储**: 自动数据持久化，可配置存储位置
+- **现代化界面**: 简洁、专业的界面设计，响应式布局
 
-## Tech Stack
+## 技术栈
 
-- **Frontend**: Vue 3 + TypeScript + Vite
-- **Desktop Framework**: Electron
-- **UI Library**: Element Plus
-- **State Management**: Pinia
-- **Data Storage**: JSON file-based with electron-store
+- **前端**: Vue 3 + TypeScript + Vite
+- **桌面框架**: Electron
+- **UI 组件库**: Element Plus
+- **状态管理**: Pinia
+- **数据存储**: JSON 文件 + electron-store
 
-## Prerequisites
+## 环境要求
 
 - Node.js >= 16.0.0
 - npm >= 8.0.0
 
-## Installation
+## 安装
 
-1. Clone the repository
+1. 克隆仓库
 ```bash
-git clone https://github.com/yourusername/project-management-system.git
+git clone https://github.com/68057022/Windows-Folder-Management.git
 cd project-management-system
 ```
 
-2. Install dependencies
+2. 安装依赖
 ```bash
 npm install
 ```
 
-## Development
+## 开发
 
-Start the development server:
+启动开发服务器：
 
 ```bash
 npm run electron:dev
 ```
 
-This will:
-- Start the Vite development server on `http://localhost:5173`
-- Launch the Electron application
-- Enable hot module replacement for Vue components
+这将会：
+- 启动 Vite 开发服务器在 `http://localhost:5173`
+- 启动 Electron 应用程序
+- 启用 Vue 组件的热模块替换
 
-## Building
+## 打包构建
 
-Build the application for production:
+构建生产版本应用：
 
 ```bash
 npm run electron:build
 ```
 
-The built application will be available in the `dist` directory.
+构建后的应用程序将在 `dist` 目录中。
 
-## Project Structure
+## 项目结构
 
 ```
 project-management-system/
-├── electron/              # Electron main and preload scripts
-│   ├── main.ts           # Main process
-│   └── preload.ts        # Preload script for IPC
-├── src/                  # Vue application source
-│   ├── components/       # Reusable Vue components
-│   ├── views/           # Page-level components
-│   ├── stores/          # Pinia state stores
-│   ├── types/           # TypeScript type definitions
-│   ├── App.vue          # Root component
-│   ├── main.ts          # Application entry point
-│   └── style.css        # Global styles
-├── public/              # Static assets
-├── electron-builder.json # Electron builder configuration
-├── package.json         # Project dependencies and scripts
-├── tsconfig.json        # TypeScript configuration
-└── vite.config.ts       # Vite configuration
+├── electron/              # Electron 主进程和预加载脚本
+│   ├── main.ts           # 主进程
+│   └── preload.ts        # IPC 预加载脚本
+├── src/                  # Vue 应用源码
+│   ├── components/       # 可复用的 Vue 组件
+│   ├── views/           # 页面级组件
+│   ├── stores/          # Pinia 状态存储
+│   ├── types/           # TypeScript 类型定义
+│   ├── App.vue          # 根组件
+│   ├── main.ts          # 应用入口
+│   └── style.css        # 全局样式
+├── public/              # 静态资源
+├── electron-builder.json # Electron 构建配置
+├── package.json         # 项目依赖和脚本
+├── tsconfig.json        # TypeScript 配置
+└── vite.config.ts       # Vite 配置
 ```
 
-## Configuration
+## 配置
 
-### Data Storage
+### 数据存储
 
-On first launch, the application will prompt you to select a data storage directory. This directory will contain:
-- `projects.json`: Project data
-- `attachments/`: Project attachments
+首次启动时，应用会提示您选择数据存储目录。该目录将包含：
+- `projects.json`: 项目数据
+- `attachments/`: 项目附件
 
-You can change the storage location in Settings.
+您可以在设置中更改存储位置。
 
-### Workspace
+### 工作区
 
-Select a workspace folder where your project folders are located. The application will help you organize and manage folders within this workspace.
+选择一个工作区文件夹，您的项目文件夹将位于此处。应用将帮助您组织和管理该工作区内的文件夹。
 
-## Usage
 
-### Adding Projects
+## 可用脚本
 
-1. Click the "+" button in the sidebar
-2. Create a new project folder or select an existing one
-3. Fill in project details (client, phase, deadline, etc.)
-4. Add requirements and attachments as needed
+- `npm run dev`: 启动 Vite 开发服务器
+- `npm run build`: 构建生产版本 Vue 应用
+- `npm run electron:dev`: 以开发模式启动 Electron 应用
+- `npm run electron:build`: 构建并打包 Electron 应用
 
-### Batch Import
-
-Import multiple existing project folders:
-1. Click "Batch Import" in the sidebar
-2. Select multiple project folders
-3. The folders will be moved to your workspace and marked as historical projects
-
-### Project Management
-
-- **View**: Dashboard shows project statistics and quick filters
-- **Search**: Filter projects by name, client, or description
-- **Sort**: Sort by creation time, modification time, or deadline
-- **Update**: Edit project details or batch update project phases
-- **Delete**: Remove projects from the system
-
-## Scripts
-
-- `npm run dev`: Start Vite development server
-- `npm run build`: Build Vue application for production
-- `npm run electron:dev`: Start Electron application in development mode
-- `npm run electron:build`: Build and package Electron application
-
-## License
+## 许可证
 
 MIT
 
-## Contributing
+## 贡献
 
-Contributions are welcome! Please feel free to submit a Pull Request.
+欢迎贡献！请随时提交 Pull Request。
 
-For more details, see [CONTRIBUTING.md](./CONTRIBUTING.md) | [贡献指南](./CONTRIBUTING_CN.md)
+详见 [贡献指南](./CONTRIBUTING_CN.md)
 
-## Support
+## 支持
 
-If you encounter any issues or have questions, please file an issue on the GitHub repository.
+如果您遇到任何问题或有疑问，请在 GitHub 仓库中提交 issue。
 

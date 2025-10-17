@@ -2,7 +2,7 @@
 
 Thank you for your interest in contributing to this project!
 
-English | [简体中文](./CONTRIBUTING_CN.md)
+[简体中文](./CONTRIBUTING_CN.md) | English
 
 ## Development Setup
 

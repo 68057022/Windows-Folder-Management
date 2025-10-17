@@ -2,7 +2,7 @@
 
 感谢您对本项目的关注！
 
-[English](./CONTRIBUTING.md) | 简体中文
+简体中文 | [English](./CONTRIBUTING.md)
 
 ## 开发环境搭建
 
