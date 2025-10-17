@@ -4,6 +4,17 @@
 
 [English](./README.md) | 简体中文
 
+## 应用截图
+
+### 仪表盘
+![仪表盘](./screenshots/01-dashboard.png)
+
+### 项目列表
+![项目列表](./screenshots/02-project-list.png)
+
+### 编辑项目
+![编辑项目](./screenshots/03-edit-project.png)
+
 ## 功能特性
 
 - **项目组织管理**: 在集中的工作区中管理多个项目

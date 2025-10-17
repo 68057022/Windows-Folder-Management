@@ -4,6 +4,17 @@ A modern desktop application for managing web development projects, built with E
 
 English | [简体中文](./README_CN.md)
 
+## Screenshots
+
+### Dashboard
+![Dashboard](./screenshots/01-dashboard.png)
+
+### Project List
+![Project List](./screenshots/02-project-list.png)
+
+### Edit Project
+![Edit Project](./screenshots/03-edit-project.png)
+
 ## Features
 
 - **Project Organization**: Manage multiple projects in a centralized workspace
