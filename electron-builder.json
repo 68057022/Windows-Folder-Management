@@ -1,0 +1,41 @@
+{
+  "appId": "com.project.manager",
+  "productName": "企业项目管理系统",
+  "directories": {
+    "output": "release",
+    "buildResources": "build"
+  },
+  "files": [
+    "dist/**/*",
+    "dist-electron/**/*",
+    "package.json"
+  ],
+  "win": {
+    "target": [
+      {
+        "target": "nsis",
+        "arch": ["x64"]
+      }
+    ],
+    "icon": "build/icon.ico"
+  },
+  "nsis": {
+    "oneClick": false,
+    "allowToChangeInstallationDirectory": true,
+    "perMachine": false,
+    "createDesktopShortcut": true,
+    "createStartMenuShortcut": true,
+    "shortcutName": "企业项目管理系统",
+    "installerLanguages": ["zh_CN"],
+    "language": "2052"
+  },
+  "mac": {
+    "target": ["dmg"],
+    "icon": "build/icon.icns"
+  },
+  "linux": {
+    "target": ["AppImage"],
+    "category": "Utility"
+  }
+}
+
