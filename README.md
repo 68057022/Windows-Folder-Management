@@ -7,13 +7,13 @@
 ## 应用截图
 
 ### 仪表盘
-![仪表盘](./screenshots/01-dashboard.png)
+![仪表盘](https://raw.githubusercontent.com/68057022/Windows-Folder-Management/main/screenshots/01-dashboard.png)
 
 ### 项目列表
-![项目列表](./screenshots/02-project-list.png)
+![项目列表](https://raw.githubusercontent.com/68057022/Windows-Folder-Management/main/screenshots/02-project-list.png)
 
 ### 编辑项目
-![编辑项目](./screenshots/03-edit-project.png)
+![编辑项目](https://raw.githubusercontent.com/68057022/Windows-Folder-Management/main/screenshots/03-edit-project.png)
 
 ## 功能特性
 

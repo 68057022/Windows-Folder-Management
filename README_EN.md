@@ -7,13 +7,13 @@ A modern desktop application for managing web development projects, built with E
 ## Screenshots
 
 ### Dashboard
-![Dashboard](./screenshots/01-dashboard.png)
+![Dashboard](https://raw.githubusercontent.com/68057022/Windows-Folder-Management/main/screenshots/01-dashboard.png)
 
 ### Project List
-![Project List](./screenshots/02-project-list.png)
+![Project List](https://raw.githubusercontent.com/68057022/Windows-Folder-Management/main/screenshots/02-project-list.png)
 
 ### Edit Project
-![Edit Project](./screenshots/03-edit-project.png)
+![Edit Project](https://raw.githubusercontent.com/68057022/Windows-Folder-Management/main/screenshots/03-edit-project.png)
 
 ## Features
 
